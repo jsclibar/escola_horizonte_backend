@@ -14,7 +14,7 @@ Projeto didático desenvolvido em **Python com FastAPI** para demonstrar conceit
 ```text
 escola_horizonte_backend/
 │
-├── 00-conceitos_iniciais/
+├── 01-conceitos_iniciais/
 │   └── hello_world_fastapi.py
 │
 ├── BD/
