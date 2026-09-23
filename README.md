@@ -59,7 +59,7 @@ As principais dependências utilizadas são:
 O primeiro exemplo está localizado em:
 
 ```text
-00-conceitos_iniciais/
+01-conceitos_iniciais/
 ```
 
 O arquivo `hello_world_fastapi.py` contém uma aplicação FastAPI simples com duas rotas:
