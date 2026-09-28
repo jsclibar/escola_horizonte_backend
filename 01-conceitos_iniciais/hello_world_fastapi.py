@@ -1,6 +1,10 @@
+# Importa o FastAPI, framework usado para criar a API
 from fastapi import FastAPI
+
+# Importa o Uvicorn, servidor responsável por executar a aplicação
 import uvicorn
 
+# Cria a aplicação FastAPI e define as informações da documentação
 app = FastAPI(
     title="Backend (API) da Escola Horizonte",
     description="API para gerenciamento do backend da Escola Horizonte",
@@ -8,11 +12,15 @@ app = FastAPI(
 )
 
 
+# Endpoint GET /
+# Retorna uma mensagem simples para verificar se a API está funcionando
 @app.get("/", tags=["Geral"], summary="Hello World")
 def home():
     return {"message": "Hello World"}
 
 
+# Endpoint GET /alunos
+# Retorna uma lista de alunos
 @app.get("/alunos", tags=["Alunos"], summary="Listar alunos")
 def listar_alunos():
     return [
@@ -28,6 +36,8 @@ def listar_alunos():
         }
     ]
 
+
+# Executa o servidor Uvicorn somente quando este arquivo é iniciado diretamente
 if __name__ == "__main__":
     uvicorn.run(
         "hello_world_fastapi:app",
