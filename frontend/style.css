@@ -1,0 +1,46 @@
+/* Define as cores, a fonte e o espaçamento da página. */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #1f2937;
+  background-color: #f3f4f6;
+}
+
+/* Centraliza e limita a largura do conteúdo. */
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Define a aparência do botão. */
+button {
+  padding: 10px 16px;
+  font: inherit;
+  color: white;
+  background-color: #1d4ed8;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Destaca o botão quando o mouse passa sobre ele. */
+button:hover {
+  background-color: #1e40af;
+}
+
+/* Retira os marcadores e o recuo padrão da lista. */
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* Separa visualmente cada livro. */
+li {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
