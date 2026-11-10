@@ -11,7 +11,7 @@ body {
 /* Centraliza e limita a largura do conteúdo. */
 main {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 /* Define a aparência do botão. */

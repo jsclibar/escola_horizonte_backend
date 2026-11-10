@@ -16,7 +16,7 @@ botao.onclick = async function () {
     // Se o status HTTP indicar erro, envia a execução para o catch.
     // throw new Error é semelhante a raise Exception no Python.
     if (resposta.ok === false) {
-      throw new Error("A API não conseguiu consultar os livros.");
+      throw new Error();
     }
 
     // Converte o JSON recebido em um array de objetos.
